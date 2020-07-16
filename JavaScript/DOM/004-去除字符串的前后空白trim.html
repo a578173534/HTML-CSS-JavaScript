@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>去除字符串的前后空白trim</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			window.onload = function(){
+				document.getElementById("btn").onclick = function(){
+					// 获取用户名
+					// 去除前后空白
+					alert(document.getElementById("username").value.trim());
+				}
+			}
+		</script>
+		
+		<input type="text" id="username" />
+		<input type="button" id="btn" value="获取用户名" />
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获取下拉列表选中项的value</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				
+				var provinceListElt = document.getElementById("provinceList");
+				provinceListElt.onchange = function(){
+					// 获取选中项的value
+					alert(provinceListElt.value);
+				}
+				
+			}
+			
+		</script>
+		
+		<select id="provinceList">
+			
+			<option value="">--请选择省份--</option>
+			<option value="001">广东省</option>
+			<option value="002">广西省</option>
+			<option value="003">湖南省</option>
+			<option value="004">湖北省</option>
+			
+		</select>
+		
+	</body>
+</html>
